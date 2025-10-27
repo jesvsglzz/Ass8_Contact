@@ -111,14 +111,14 @@ while current:
 assert "Amy" in found_keys, "Amy should be in the table."
 assert "May" in found_keys, "May should be in the table."
 
-# Test 4: Duplicate key update (Rebecca)
+# Test 4: Duplicate key update
 table.insert("Rebecca", "999-444-9999")
 assert str(table.search("Rebecca")) == "Rebecca: 999-444-9999", "Rebecca's number should be updated."
 
 # Test 5: Search for non-existent contact
 assert table.search("Chris") is None, "Chris should not be found in the table."
 
-# Test 6: Hash table structure (optional, visual verification)
+# Test 6: Hash table structure
 print("Hash table after all insertions and updates:")
 table.print_table()
 
